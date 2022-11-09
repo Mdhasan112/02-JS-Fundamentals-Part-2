@@ -105,10 +105,63 @@ const checkWinner = function (avgDolphins, avgKoalas) {
     if (avgDolphins >= 2 * avgKoalas) {
         console.log(`Dolphins wins🥇${avgDolphins} vs. ${avgKoalas}`);
     } else if (avgKoalas >= 2 * avgDolphins) {
-        console.log(`Kaolas wins🥇${avgKoalas} vs. ${avgDolphins}`)
+        console.log(`Koalas wins🥇${avgKoalas} vs. ${avgDolphins}`)
     } else {
         console.log('No tim win')
     }
 }
 checkWinner(scoreDolphins, scoreKoalas);
+*/
+
+/*
+const friend1 = 'Michael';
+const friend2 = 'Ross Tailor';
+const friend3 = 'David';
+
+const friends = ['Michael', 'Ross Tailor', 'David']
+//friends[2] = 'Milan'
+console.log(friends);
+console.log(friends[friends.length - 2])
+
+const years = new Array(1990, 1991, 1992, 1993);
+console.log(years);
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Warner', 2022 - 1995, 'Teacher', friends];
+console.log(jonas);
+
+// Array Exercise
+const calcAge = function (birthYear) {
+    return 2050 - birthYear;
+}
+const y = [1990, 2002, 1998, 1999];
+console.log(calcAge(years[0]));
+*/
+
+/*
+const friends = ['Michael', 'Ross Tailor', 'David'];
+
+//add element
+const newFriends = friends.push('Nadir'); //last
+console.log(friends);
+
+friends.unshift('Rohim'); //first
+console.log(friends)
+
+//remove element
+
+friends.pop()
+console.log(friends) //last
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Ross Tailor'));
+
+console.log(friends.includes('Ross Tailor'));
+console.log(friends.includes('Michael'));
+
+if (friends.includes('Ross Tailor')) {
+    console.log('you have a friend Ross Tailor')
+};
 */
