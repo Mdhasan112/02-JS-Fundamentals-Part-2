@@ -165,3 +165,60 @@ if (friends.includes('Ross Tailor')) {
     console.log('you have a friend Ross Tailor')
 };
 */
+
+//coding challenge- 2
+const calcTip = function (bill) {
+    return
+}
+
+/*
+//object
+const jonasArray = [
+    'Jonas',
+    'william',
+    35,
+    'teacher',
+    ['Nader', 'David', 'John']
+]
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Warner',
+    Age: 35,
+    Job: 'teacher',
+    friends: ['Nader', 'David', 'John']
+}
+console.log(jonas.firstName);
+console.log(jonas['firstName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const interested = prompt('What you want to know about jonas? name, job, age, friends?');
+// console.log(jonas[interested]);
+
+if (jonas[interested]) {
+    console.log(interested)
+} else {
+    console.log('wrong typing! inter a valid info.')
+};
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his best friends is called ${jonas.friends[0]}.`);
+console.log(jonas['firstName'])
+*/
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Warner',
+    Age: 35,
+    Job: 'teacher',
+    friends: ['Nader', 'David', 'John'],
+    hasDriverLicense: true,
+    calcAge: function (birthYear) {
+        console.log(this)
+        return 2037 - birthYear;
+    }
+};
+console.log(jonas.calcAge(2000));
+console.log(jonas['calcAge'](2000));
