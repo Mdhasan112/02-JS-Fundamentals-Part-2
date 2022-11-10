@@ -208,17 +208,50 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his best
 console.log(jonas['firstName'])
 */
 
+/*
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Warner',
-    Age: 35,
+    birthYear: 1990,
     Job: 'teacher',
     friends: ['Nader', 'David', 'John'],
     hasDriverLicense: true,
-    calcAge: function (birthYear) {
-        console.log(this)
-        return 2037 - birthYear;
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
     }
 };
-console.log(jonas.calcAge(2000));
-console.log(jonas['calcAge'](2000));
+console.log(jonas.calcAge());
+console.log(jonas.age);
+// console.log(jonas['calcAge'](2000));\
+*/
+
+const MarkMillerBio = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBmi: function () {
+        this.BMI = this.mass / this.height ** 2;
+        return this.BMI;
+    }
+}
+const johnSmithBio = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBmi: function () {
+        this.BMI = this.mass / this.height ** 2;
+        return this.BMI;
+    }
+}
+
+MarkMillerBio.calcBmi();
+johnSmithBio.calcBmi();
+
+console.log(MarkMillerBio.BMI, johnSmithBio.BMI);
+
+if (MarkMillerBio.calcBmi() > johnSmithBio.BMI) {
+    console.log(`${MarkMillerBio.fullName} BMI ${MarkMillerBio.calcBmi()} is higher then ${johnSmithBio.fullName}`)
+} else if (johnSmithBio.BMI > MarkMillerBio.calcBmi()) {
+    console.log(`${johnSmithBio.fullName} BMI ${johnSmithBio.BMI} is higher then ${MarkMillerBio.fullName}`)
+}
