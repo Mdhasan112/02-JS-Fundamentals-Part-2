@@ -226,6 +226,8 @@ console.log(jonas.age);
 // console.log(jonas['calcAge'](2000));\
 */
 
+/*
+//challenge- 3
 const MarkMillerBio = {
     fullName: 'Mark Miller',
     mass: 78,
@@ -254,4 +256,30 @@ if (MarkMillerBio.calcBmi() > johnSmithBio.BMI) {
     console.log(`${MarkMillerBio.fullName} BMI ${MarkMillerBio.calcBmi()} is higher then ${johnSmithBio.fullName}`)
 } else if (johnSmithBio.BMI > MarkMillerBio.calcBmi()) {
     console.log(`${johnSmithBio.fullName} BMI ${johnSmithBio.BMI} is higher then ${MarkMillerBio.fullName}`)
+}
+*/
+
+/*
+//forloop
+console.log('Lifting weights repeating 1');
+console.log('Lifting weights repeating 2');
+console.log('Lifting weights repeating 3');
+console.log('Lifting weights repeating 4');
+console.log('Lifting weights repeating 5');
+console.log('Lifting weights repeating 6');
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`Lifting weights repeating ${i}`)
+}
+*/
+
+const jonas = [
+    'Jonas',
+    'william',
+    35,
+    'teacher',
+    ['Nader', 'David', 'John']
+]
+for (let i = 0; i < jonas.length; i++) {
+    console.log(jonas[i])
 }
