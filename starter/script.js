@@ -273,13 +273,50 @@ for (let i = 1; i <= 10; i++) {
 }
 */
 
+/*
 const jonas = [
     'Jonas',
     'william',
     35,
     'teacher',
-    ['Nader', 'David', 'John']
+    ['Nader', 'David', 'John'],
+    true
 ]
 for (let i = 0; i < jonas.length; i++) {
     console.log(jonas[i])
+};
+
+const years = [1990, 1992, 1998, 2005];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i])
+};
+console.log(ages);
+
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue;
+    console.log(jonas[i])
+};
+*/
+
+const jonas = [
+    'Jonas',
+    'william',
+    35,
+    'teacher',
+    ['Nader', 'David', 'John'],
+    true
+]
+
+for (let i = jonas.length; i >= 0; i--) {
+    console.log(jonas[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`---exercise--- ${exercise}`);
+
+    for (let rep = 1; rep <= 3; rep++) {
+        console.log(`repeating- ${rep}`)
+    }
 }
