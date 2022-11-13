@@ -300,6 +300,9 @@ for (let i = 0; i < jonas.length; i++) {
 };
 */
 
+/*
+//loop in loop
+
 const jonas = [
     'Jonas',
     'william',
@@ -320,3 +323,40 @@ for (let exercise = 1; exercise < 4; exercise++) {
         console.log(`repeating- ${rep}`)
     }
 }
+*/
+
+/*
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`Lifting weights repeating ${i}`)
+// }
+
+let i = 1;
+while (i <= 10) {
+    console.log(`Lifting weights repeating ${i}`);
+    i++;
+};
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+if (dice !== 6) {
+    console.log(`show the result ${dice}`)
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end!')
+}
+*/
+
+// test challenge
+const calcTips = function (bills) {
+    return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTips((bills[i]));
+    tips.push(tip);
+    total.push(tip + (bills[i]))
+}
+console.log(tips, total)
